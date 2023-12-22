@@ -10,15 +10,11 @@ public class Orador {
     private String tema;
     private Date fechaAlta;
 
-    // Constructor
+
     public Orador() {
     }
 
-    // Getters y setters
-    // ...
 
-    // Resto de métodos y atributos
-    // ...
 
     public int getIdOrador() {
         return idOrador;

@@ -39,14 +39,14 @@
             <td><%= orador.getFechaAlta()%></td>
             <td>
                 <div class="d-flex">
-                    <!-- Formulario para actualizar -->
+                    <!-- ACTUALIZAR -->
                     <form action="GestionOradorServlet" method="post" class="mr-2">
                         <input type="hidden" name="accion" value="actualizar">
                         <input type="hidden" name="id" value="<%= orador.getIdOrador()%>">
                         <button type="submit" class="btn btn-warning btn-block">Actualizar</button>
                     </form>
 
-                    <!-- Formulario para eliminar -->
+                    <!-- ELIMINAR -->
                     <form action="GestionOradorServlet" method="post">
                         <input type="hidden" name="accion" value="eliminar">
                         <input type="hidden" name="id" value="<%= orador.getIdOrador()%>">

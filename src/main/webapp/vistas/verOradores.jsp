@@ -3,7 +3,7 @@
 <%@page import="com.dao.OradoresDAO"%>
 <%@page import="java.util.List"%>
 <%@page import="com.modelo.Orador"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,14 +26,14 @@
         </thead>
         <tbody>
         <%
-            // Crear una instancia de OradoresDAO para acceder a la base de datos
+
             OradoresDAO oradoresDAO = new OradoresDAO();
 
-            // Obtener la lista de oradores desde la base de datos
+
             List<Orador> oradores = oradoresDAO.obtenerTodos();
 
             if (oradores != null && !oradores.isEmpty()) {
-                // Iterar sobre la lista de oradores y mostrar sus datos en la tabla
+
                 for (Orador orador : oradores) {
         %>
         <tr>

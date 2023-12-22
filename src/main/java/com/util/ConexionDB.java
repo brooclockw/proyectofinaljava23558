@@ -11,13 +11,10 @@ public class ConexionDB {
     private static final String USER = "root";
     private static final String PASSWORD = "root";
 
-//    Bloque Estático (static {}):
-//    Un bloque estático es una sección de código que se ejecuta solo una vez, cuando la clase es cargada por el ClassLoader de Java.
-//    Es útil para inicializar recursos estáticos o realizar acciones de configuración que solo necesitan realizarse una vez durante la vida útil de una aplicación.
-
+//
     static {
         try {
-            // Carga dinámicamente la clase especificada y la inicializa, retornando su objeto Class.
+
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
