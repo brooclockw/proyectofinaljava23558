@@ -41,7 +41,7 @@ function borrarCasillas(){
     apellido.value = "";
     email.value ="";
     cantidad.value = "";
-    totalPagar.value = 'Total a Pagar: $';
+    totalPagar.textContent = 'Total a Pagar: $';
     categoria.value = "sinCategoria"
 }
 
